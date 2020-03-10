@@ -1,0 +1,1318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15C90E91EA8F21243A6B1411 /* Pods_WebRTCDemoBroadcast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACADE931ED582989C42598E2 /* Pods_WebRTCDemoBroadcast.framework */; };
+		319D5329893C99B60E2822EE /* Pods_WebRTCDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 462484970783E48204B2F166 /* Pods_WebRTCDemo.framework */; };
+		E4F2471DAEC0B2DAFC8331B5 /* Pods_WebRTCDemoSignalling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8402EA5B93ABA7BDA0DD89D6 /* Pods_WebRTCDemoSignalling.framework */; };
+		F195016C2417949000A39C60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195016B2417949000A39C60 /* AppDelegate.swift */; };
+		F195016E2417949000A39C60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195016D2417949000A39C60 /* SceneDelegate.swift */; };
+		F19501702417949000A39C60 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195016F2417949000A39C60 /* ContentView.swift */; };
+		F19501722417949200A39C60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19501712417949200A39C60 /* Assets.xcassets */; };
+		F19501752417949200A39C60 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19501742417949200A39C60 /* Preview Assets.xcassets */; };
+		F19501782417949200A39C60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19501762417949200A39C60 /* LaunchScreen.storyboard */; };
+		F19501832417949200A39C60 /* WebRTCDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19501822417949200A39C60 /* WebRTCDemoTests.swift */; };
+		F19501942417952600A39C60 /* ReplayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19501932417952600A39C60 /* ReplayKit.framework */; };
+		F195019B2417952600A39C60 /* WebRTCDemoBroadcast.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F19501912417952600A39C60 /* WebRTCDemoBroadcast.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F19501AE241795F700A39C60 /* WebRTCDemoSignalling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */; };
+		F19501B5241795F700A39C60 /* WebRTCDemoSignallingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19501B4241795F700A39C60 /* WebRTCDemoSignallingTests.swift */; };
+		F19501B7241795F700A39C60 /* WebRTCDemoSignalling.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501A7241795F700A39C60 /* WebRTCDemoSignalling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19501BA241795F700A39C60 /* WebRTCDemoSignalling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */; };
+		F19501BB241795F700A39C60 /* WebRTCDemoSignalling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F19501C32417960D00A39C60 /* WebRTCDemoSignalling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */; };
+		F19501C42417960D00A39C60 /* WebRTCDemoSignalling.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F19501ED2418253300A39C60 /* ARDJoinResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501C92418253300A39C60 /* ARDJoinResponse.h */; };
+		F19501EE2418253300A39C60 /* ARDSettingsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501CA2418253300A39C60 /* ARDSettingsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19501EF2418253300A39C60 /* ARDWebSocketChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501CB2418253300A39C60 /* ARDWebSocketChannel.h */; };
+		F19501F02418253300A39C60 /* ARDTURNClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501CC2418253300A39C60 /* ARDTURNClient.h */; };
+		F19501F12418253300A39C60 /* RTCSessionDescription+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501CD2418253300A39C60 /* RTCSessionDescription+JSON.h */; };
+		F19501F22418253400A39C60 /* ARDSignalingMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501CE2418253300A39C60 /* ARDSignalingMessage.m */; };
+		F19501F32418253400A39C60 /* ARDSettingsStore.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501CF2418253300A39C60 /* ARDSettingsStore.h */; };
+		F19501F42418253400A39C60 /* ARDAppEngineClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501D02418253300A39C60 /* ARDAppEngineClient.m */; };
+		F19501F52418253400A39C60 /* ARDAppClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501D12418253300A39C60 /* ARDAppClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19501F62418253400A39C60 /* RTCIceServer+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501D22418253300A39C60 /* RTCIceServer+JSON.m */; };
+		F19501F72418253400A39C60 /* ARDExternalSampleCapturer.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501D32418253300A39C60 /* ARDExternalSampleCapturer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F19501F82418253400A39C60 /* RTCIceCandidate+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501D42418253300A39C60 /* RTCIceCandidate+JSON.h */; };
+		F19501F92418253400A39C60 /* ARDSettingsModel+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501D52418253300A39C60 /* ARDSettingsModel+Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F19501FA2418253400A39C60 /* ARDUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501D72418253300A39C60 /* ARDUtilities.m */; };
+		F19501FB2418253400A39C60 /* ARDUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501D82418253300A39C60 /* ARDUtilities.h */; };
+		F19501FC2418253400A39C60 /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501DB2418253300A39C60 /* SRWebSocket.m */; };
+		F19501FD2418253400A39C60 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = F19501DC2418253300A39C60 /* LICENSE */; };
+		F19501FE2418253400A39C60 /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501DD2418253300A39C60 /* SRWebSocket.h */; };
+		F19501FF2418253400A39C60 /* ARDJoinResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501DE2418253300A39C60 /* ARDJoinResponse.m */; };
+		F19502002418253400A39C60 /* ARDJoinResponse+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501DF2418253300A39C60 /* ARDJoinResponse+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F19502012418253400A39C60 /* ARDTURNClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501E02418253300A39C60 /* ARDTURNClient.m */; };
+		F19502022418253400A39C60 /* ARDWebSocketChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501E12418253300A39C60 /* ARDWebSocketChannel.m */; };
+		F19502032418253400A39C60 /* ARDTURNClient+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501E22418253300A39C60 /* ARDTURNClient+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F19502042418253400A39C60 /* ARDSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501E32418253300A39C60 /* ARDSettingsModel.m */; };
+		F19502052418253400A39C60 /* ARDSignalingMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501E42418253300A39C60 /* ARDSignalingMessage.h */; };
+		F19502062418253400A39C60 /* ARDAppClient+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501E52418253300A39C60 /* ARDAppClient+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F19502072418253400A39C60 /* RTCSessionDescription+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501E62418253300A39C60 /* RTCSessionDescription+JSON.m */; };
+		F19502082418253400A39C60 /* RTCIceCandidate+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501E72418253300A39C60 /* RTCIceCandidate+JSON.m */; };
+		F19502092418253400A39C60 /* ARDExternalSampleCapturer.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501E82418253300A39C60 /* ARDExternalSampleCapturer.m */; };
+		F195020A2418253400A39C60 /* RTCIceServer+JSON.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501E92418253300A39C60 /* RTCIceServer+JSON.h */; };
+		F195020B2418253400A39C60 /* ARDAppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501EA2418253300A39C60 /* ARDAppClient.m */; };
+		F195020C2418253400A39C60 /* ARDSettingsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F19501EB2418253300A39C60 /* ARDSettingsStore.m */; };
+		F195020D2418253400A39C60 /* ARDAppEngineClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F19501EC2418253300A39C60 /* ARDAppEngineClient.h */; };
+		F195020F2418264000A39C60 /* WebRTCDemoBroadcastSampleHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195020E2418264000A39C60 /* WebRTCDemoBroadcastSampleHandler.swift */; };
+		F1950215241828A800A39C60 /* ARDMessageResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = F1950210241828A800A39C60 /* ARDMessageResponse.h */; };
+		F1950216241828A800A39C60 /* ARDMessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F1950211241828A800A39C60 /* ARDMessageResponse.m */; };
+		F1950217241828A800A39C60 /* ARDMessageResponse+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = F1950212241828A800A39C60 /* ARDMessageResponse+Internal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F1950218241828A800A39C60 /* ARDRoomServerClient.h in Headers */ = {isa = PBXBuildFile; fileRef = F1950213241828A800A39C60 /* ARDRoomServerClient.h */; };
+		F1950219241828A800A39C60 /* ARDSignalingChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = F1950214241828A800A39C60 /* ARDSignalingChannel.h */; };
+		F195021D24182BEA00A39C60 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195021B24182BEA00A39C60 /* String+Extension.swift */; };
+		F195021F24182BEA00A39C60 /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195021C24182BEA00A39C60 /* OSLog+Extension.swift */; };
+		F195022124182C2200A39C60 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195021B24182BEA00A39C60 /* String+Extension.swift */; };
+		F195022224182C2600A39C60 /* OSLog+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195021C24182BEA00A39C60 /* OSLog+Extension.swift */; };
+		F195022624182E7A00A39C60 /* WebRTCDemoModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F195022524182E7A00A39C60 /* WebRTCDemoModelView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F195017F2417949200A39C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F19501602417949000A39C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F19501672417949000A39C60;
+			remoteInfo = WebRTCDemo;
+		};
+		F19501992417952600A39C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F19501602417949000A39C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F19501902417952600A39C60;
+			remoteInfo = WebRTCDemoBroadcast;
+		};
+		F19501AF241795F700A39C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F19501602417949000A39C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F19501A4241795F700A39C60;
+			remoteInfo = WebRTCDemoSignalling;
+		};
+		F19501B1241795F700A39C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F19501602417949000A39C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F19501672417949000A39C60;
+			remoteInfo = WebRTCDemo;
+		};
+		F19501B8241795F700A39C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F19501602417949000A39C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F19501A4241795F700A39C60;
+			remoteInfo = WebRTCDemoSignalling;
+		};
+		F19501C52417960D00A39C60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F19501602417949000A39C60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F19501A4241795F700A39C60;
+			remoteInfo = WebRTCDemoSignalling;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F195019F2417952600A39C60 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F195019B2417952600A39C60 /* WebRTCDemoBroadcast.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501BF241795F700A39C60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F19501BB241795F700A39C60 /* WebRTCDemoSignalling.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501C72417960D00A39C60 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F19501C42417960D00A39C60 /* WebRTCDemoSignalling.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		462484970783E48204B2F166 /* Pods_WebRTCDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebRTCDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CBE9E510FCF7D4CED6CFDAD /* Pods-WebRTCDemoSignalling.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemoSignalling.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCDemoSignalling/Pods-WebRTCDemoSignalling.debug.xcconfig"; sourceTree = "<group>"; };
+		7674CFE299F6D3AAEDB6AF49 /* Pods-WebRTCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemo.release.xcconfig"; path = "Target Support Files/Pods-WebRTCDemo/Pods-WebRTCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		76D3304D04476E5EEDD6913D /* Pods-WebRTCDemoBroadcast.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemoBroadcast.release.xcconfig"; path = "Target Support Files/Pods-WebRTCDemoBroadcast/Pods-WebRTCDemoBroadcast.release.xcconfig"; sourceTree = "<group>"; };
+		8402EA5B93ABA7BDA0DD89D6 /* Pods_WebRTCDemoSignalling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebRTCDemoSignalling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87D2CDE381884B12D931BD30 /* Pods-WebRTCDemoBroadcast.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemoBroadcast.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCDemoBroadcast/Pods-WebRTCDemoBroadcast.debug.xcconfig"; sourceTree = "<group>"; };
+		ACADE931ED582989C42598E2 /* Pods_WebRTCDemoBroadcast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WebRTCDemoBroadcast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9FF5ECCFD792E0E58A6258 /* Pods-WebRTCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemo.debug.xcconfig"; path = "Target Support Files/Pods-WebRTCDemo/Pods-WebRTCDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F19501682417949000A39C60 /* WebRTCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebRTCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F195016B2417949000A39C60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F195016D2417949000A39C60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F195016F2417949000A39C60 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F19501712417949200A39C60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F19501742417949200A39C60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F19501772417949200A39C60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F19501792417949200A39C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F195017E2417949200A39C60 /* WebRTCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19501822417949200A39C60 /* WebRTCDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCDemoTests.swift; sourceTree = "<group>"; };
+		F19501842417949200A39C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19501912417952600A39C60 /* WebRTCDemoBroadcast.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WebRTCDemoBroadcast.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19501932417952600A39C60 /* ReplayKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReplayKit.framework; path = System/Library/Frameworks/ReplayKit.framework; sourceTree = SDKROOT; };
+		F19501982417952600A39C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebRTCDemoSignalling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19501A7241795F700A39C60 /* WebRTCDemoSignalling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebRTCDemoSignalling.h; sourceTree = "<group>"; };
+		F19501A8241795F700A39C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19501AD241795F700A39C60 /* WebRTCDemoSignallingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebRTCDemoSignallingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19501B4241795F700A39C60 /* WebRTCDemoSignallingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebRTCDemoSignallingTests.swift; sourceTree = "<group>"; };
+		F19501B6241795F700A39C60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19501C92418253300A39C60 /* ARDJoinResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDJoinResponse.h; sourceTree = "<group>"; };
+		F19501CA2418253300A39C60 /* ARDSettingsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsModel.h; sourceTree = "<group>"; };
+		F19501CB2418253300A39C60 /* ARDWebSocketChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDWebSocketChannel.h; sourceTree = "<group>"; };
+		F19501CC2418253300A39C60 /* ARDTURNClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDTURNClient.h; sourceTree = "<group>"; };
+		F19501CD2418253300A39C60 /* RTCSessionDescription+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCSessionDescription+JSON.h"; sourceTree = "<group>"; };
+		F19501CE2418253300A39C60 /* ARDSignalingMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSignalingMessage.m; sourceTree = "<group>"; };
+		F19501CF2418253300A39C60 /* ARDSettingsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSettingsStore.h; sourceTree = "<group>"; };
+		F19501D02418253300A39C60 /* ARDAppEngineClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppEngineClient.m; sourceTree = "<group>"; };
+		F19501D12418253300A39C60 /* ARDAppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppClient.h; sourceTree = "<group>"; };
+		F19501D22418253300A39C60 /* RTCIceServer+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceServer+JSON.m"; sourceTree = "<group>"; };
+		F19501D32418253300A39C60 /* ARDExternalSampleCapturer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDExternalSampleCapturer.h; sourceTree = "<group>"; };
+		F19501D42418253300A39C60 /* RTCIceCandidate+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceCandidate+JSON.h"; sourceTree = "<group>"; };
+		F19501D52418253300A39C60 /* ARDSettingsModel+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDSettingsModel+Private.h"; sourceTree = "<group>"; };
+		F19501D72418253300A39C60 /* ARDUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDUtilities.m; sourceTree = "<group>"; };
+		F19501D82418253300A39C60 /* ARDUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDUtilities.h; sourceTree = "<group>"; };
+		F19501DB2418253300A39C60 /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		F19501DC2418253300A39C60 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F19501DD2418253300A39C60 /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		F19501DE2418253300A39C60 /* ARDJoinResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDJoinResponse.m; sourceTree = "<group>"; };
+		F19501DF2418253300A39C60 /* ARDJoinResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDJoinResponse+Internal.h"; sourceTree = "<group>"; };
+		F19501E02418253300A39C60 /* ARDTURNClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDTURNClient.m; sourceTree = "<group>"; };
+		F19501E12418253300A39C60 /* ARDWebSocketChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDWebSocketChannel.m; sourceTree = "<group>"; };
+		F19501E22418253300A39C60 /* ARDTURNClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDTURNClient+Internal.h"; sourceTree = "<group>"; };
+		F19501E32418253300A39C60 /* ARDSettingsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsModel.m; sourceTree = "<group>"; };
+		F19501E42418253300A39C60 /* ARDSignalingMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSignalingMessage.h; sourceTree = "<group>"; };
+		F19501E52418253300A39C60 /* ARDAppClient+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDAppClient+Internal.h"; sourceTree = "<group>"; };
+		F19501E62418253300A39C60 /* RTCSessionDescription+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCSessionDescription+JSON.m"; sourceTree = "<group>"; };
+		F19501E72418253300A39C60 /* RTCIceCandidate+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RTCIceCandidate+JSON.m"; sourceTree = "<group>"; };
+		F19501E82418253300A39C60 /* ARDExternalSampleCapturer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDExternalSampleCapturer.m; sourceTree = "<group>"; };
+		F19501E92418253300A39C60 /* RTCIceServer+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RTCIceServer+JSON.h"; sourceTree = "<group>"; };
+		F19501EA2418253300A39C60 /* ARDAppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDAppClient.m; sourceTree = "<group>"; };
+		F19501EB2418253300A39C60 /* ARDSettingsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDSettingsStore.m; sourceTree = "<group>"; };
+		F19501EC2418253300A39C60 /* ARDAppEngineClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDAppEngineClient.h; sourceTree = "<group>"; };
+		F195020E2418264000A39C60 /* WebRTCDemoBroadcastSampleHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCDemoBroadcastSampleHandler.swift; sourceTree = "<group>"; };
+		F1950210241828A800A39C60 /* ARDMessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDMessageResponse.h; sourceTree = "<group>"; };
+		F1950211241828A800A39C60 /* ARDMessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARDMessageResponse.m; sourceTree = "<group>"; };
+		F1950212241828A800A39C60 /* ARDMessageResponse+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ARDMessageResponse+Internal.h"; sourceTree = "<group>"; };
+		F1950213241828A800A39C60 /* ARDRoomServerClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDRoomServerClient.h; sourceTree = "<group>"; };
+		F1950214241828A800A39C60 /* ARDSignalingChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARDSignalingChannel.h; sourceTree = "<group>"; };
+		F195021B24182BEA00A39C60 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		F195021C24182BEA00A39C60 /* OSLog+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OSLog+Extension.swift"; sourceTree = "<group>"; };
+		F195022524182E7A00A39C60 /* WebRTCDemoModelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRTCDemoModelView.swift; sourceTree = "<group>"; };
+		F195022824182F6300A39C60 /* WebRTCDemoBroadcast.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebRTCDemoBroadcast.entitlements; sourceTree = "<group>"; };
+		F195022924182F7000A39C60 /* WebRTCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WebRTCDemo.entitlements; sourceTree = "<group>"; };
+		FBE24F9A4A3F9B1BCC2B9365 /* Pods-WebRTCDemoSignalling.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebRTCDemoSignalling.release.xcconfig"; path = "Target Support Files/Pods-WebRTCDemoSignalling/Pods-WebRTCDemoSignalling.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F19501652417949000A39C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501BA241795F700A39C60 /* WebRTCDemoSignalling.framework in Frameworks */,
+				319D5329893C99B60E2822EE /* Pods_WebRTCDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F195017B2417949200A39C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F195018E2417952600A39C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501C32417960D00A39C60 /* WebRTCDemoSignalling.framework in Frameworks */,
+				F19501942417952600A39C60 /* ReplayKit.framework in Frameworks */,
+				15C90E91EA8F21243A6B1411 /* Pods_WebRTCDemoBroadcast.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501A2241795F700A39C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F2471DAEC0B2DAFC8331B5 /* Pods_WebRTCDemoSignalling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501AA241795F700A39C60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501AE241795F700A39C60 /* WebRTCDemoSignalling.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		023FD2D74785E5A4910392C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF9FF5ECCFD792E0E58A6258 /* Pods-WebRTCDemo.debug.xcconfig */,
+				7674CFE299F6D3AAEDB6AF49 /* Pods-WebRTCDemo.release.xcconfig */,
+				87D2CDE381884B12D931BD30 /* Pods-WebRTCDemoBroadcast.debug.xcconfig */,
+				76D3304D04476E5EEDD6913D /* Pods-WebRTCDemoBroadcast.release.xcconfig */,
+				5CBE9E510FCF7D4CED6CFDAD /* Pods-WebRTCDemoSignalling.debug.xcconfig */,
+				FBE24F9A4A3F9B1BCC2B9365 /* Pods-WebRTCDemoSignalling.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F195015F2417949000A39C60 = {
+			isa = PBXGroup;
+			children = (
+				F195021A24182BEA00A39C60 /* Common */,
+				F195016A2417949000A39C60 /* WebRTCDemo */,
+				F19501812417949200A39C60 /* WebRTCDemoTests */,
+				F19501952417952600A39C60 /* WebRTCDemoBroadcast */,
+				F19501A6241795F700A39C60 /* WebRTCDemoSignalling */,
+				F19501B3241795F700A39C60 /* WebRTCDemoSignallingTests */,
+				F19501922417952600A39C60 /* Frameworks */,
+				F19501692417949000A39C60 /* Products */,
+				023FD2D74785E5A4910392C4 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F19501692417949000A39C60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F19501682417949000A39C60 /* WebRTCDemo.app */,
+				F195017E2417949200A39C60 /* WebRTCDemoTests.xctest */,
+				F19501912417952600A39C60 /* WebRTCDemoBroadcast.appex */,
+				F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */,
+				F19501AD241795F700A39C60 /* WebRTCDemoSignallingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F195016A2417949000A39C60 /* WebRTCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F195022924182F7000A39C60 /* WebRTCDemo.entitlements */,
+				F195022524182E7A00A39C60 /* WebRTCDemoModelView.swift */,
+				F195016B2417949000A39C60 /* AppDelegate.swift */,
+				F195016D2417949000A39C60 /* SceneDelegate.swift */,
+				F195016F2417949000A39C60 /* ContentView.swift */,
+				F19501712417949200A39C60 /* Assets.xcassets */,
+				F19501762417949200A39C60 /* LaunchScreen.storyboard */,
+				F19501792417949200A39C60 /* Info.plist */,
+				F19501732417949200A39C60 /* Preview Content */,
+			);
+			path = WebRTCDemo;
+			sourceTree = "<group>";
+		};
+		F19501732417949200A39C60 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F19501742417949200A39C60 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F19501812417949200A39C60 /* WebRTCDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F19501822417949200A39C60 /* WebRTCDemoTests.swift */,
+				F19501842417949200A39C60 /* Info.plist */,
+			);
+			path = WebRTCDemoTests;
+			sourceTree = "<group>";
+		};
+		F19501922417952600A39C60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F19501932417952600A39C60 /* ReplayKit.framework */,
+				462484970783E48204B2F166 /* Pods_WebRTCDemo.framework */,
+				ACADE931ED582989C42598E2 /* Pods_WebRTCDemoBroadcast.framework */,
+				8402EA5B93ABA7BDA0DD89D6 /* Pods_WebRTCDemoSignalling.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F19501952417952600A39C60 /* WebRTCDemoBroadcast */ = {
+			isa = PBXGroup;
+			children = (
+				F195022824182F6300A39C60 /* WebRTCDemoBroadcast.entitlements */,
+				F195020E2418264000A39C60 /* WebRTCDemoBroadcastSampleHandler.swift */,
+				F19501982417952600A39C60 /* Info.plist */,
+			);
+			path = WebRTCDemoBroadcast;
+			sourceTree = "<group>";
+		};
+		F19501A6241795F700A39C60 /* WebRTCDemoSignalling */ = {
+			isa = PBXGroup;
+			children = (
+				F19501C82418253300A39C60 /* WebRTCDemo */,
+				F19501A7241795F700A39C60 /* WebRTCDemoSignalling.h */,
+				F19501A8241795F700A39C60 /* Info.plist */,
+			);
+			path = WebRTCDemoSignalling;
+			sourceTree = "<group>";
+		};
+		F19501B3241795F700A39C60 /* WebRTCDemoSignallingTests */ = {
+			isa = PBXGroup;
+			children = (
+				F19501B4241795F700A39C60 /* WebRTCDemoSignallingTests.swift */,
+				F19501B6241795F700A39C60 /* Info.plist */,
+			);
+			path = WebRTCDemoSignallingTests;
+			sourceTree = "<group>";
+		};
+		F19501C82418253300A39C60 /* WebRTCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F1950210241828A800A39C60 /* ARDMessageResponse.h */,
+				F1950211241828A800A39C60 /* ARDMessageResponse.m */,
+				F1950212241828A800A39C60 /* ARDMessageResponse+Internal.h */,
+				F1950213241828A800A39C60 /* ARDRoomServerClient.h */,
+				F1950214241828A800A39C60 /* ARDSignalingChannel.h */,
+				F19501C92418253300A39C60 /* ARDJoinResponse.h */,
+				F19501CA2418253300A39C60 /* ARDSettingsModel.h */,
+				F19501CB2418253300A39C60 /* ARDWebSocketChannel.h */,
+				F19501CC2418253300A39C60 /* ARDTURNClient.h */,
+				F19501CD2418253300A39C60 /* RTCSessionDescription+JSON.h */,
+				F19501CE2418253300A39C60 /* ARDSignalingMessage.m */,
+				F19501CF2418253300A39C60 /* ARDSettingsStore.h */,
+				F19501D02418253300A39C60 /* ARDAppEngineClient.m */,
+				F19501D12418253300A39C60 /* ARDAppClient.h */,
+				F19501D22418253300A39C60 /* RTCIceServer+JSON.m */,
+				F19501D32418253300A39C60 /* ARDExternalSampleCapturer.h */,
+				F19501D42418253300A39C60 /* RTCIceCandidate+JSON.h */,
+				F19501D52418253300A39C60 /* ARDSettingsModel+Private.h */,
+				F19501D62418253300A39C60 /* common */,
+				F19501D92418253300A39C60 /* third_party */,
+				F19501DE2418253300A39C60 /* ARDJoinResponse.m */,
+				F19501DF2418253300A39C60 /* ARDJoinResponse+Internal.h */,
+				F19501E02418253300A39C60 /* ARDTURNClient.m */,
+				F19501E12418253300A39C60 /* ARDWebSocketChannel.m */,
+				F19501E22418253300A39C60 /* ARDTURNClient+Internal.h */,
+				F19501E32418253300A39C60 /* ARDSettingsModel.m */,
+				F19501E42418253300A39C60 /* ARDSignalingMessage.h */,
+				F19501E52418253300A39C60 /* ARDAppClient+Internal.h */,
+				F19501E62418253300A39C60 /* RTCSessionDescription+JSON.m */,
+				F19501E72418253300A39C60 /* RTCIceCandidate+JSON.m */,
+				F19501E82418253300A39C60 /* ARDExternalSampleCapturer.m */,
+				F19501E92418253300A39C60 /* RTCIceServer+JSON.h */,
+				F19501EA2418253300A39C60 /* ARDAppClient.m */,
+				F19501EB2418253300A39C60 /* ARDSettingsStore.m */,
+				F19501EC2418253300A39C60 /* ARDAppEngineClient.h */,
+			);
+			path = WebRTCDemo;
+			sourceTree = "<group>";
+		};
+		F19501D62418253300A39C60 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F19501D72418253300A39C60 /* ARDUtilities.m */,
+				F19501D82418253300A39C60 /* ARDUtilities.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F19501D92418253300A39C60 /* third_party */ = {
+			isa = PBXGroup;
+			children = (
+				F19501DA2418253300A39C60 /* SocketRocket */,
+			);
+			path = third_party;
+			sourceTree = "<group>";
+		};
+		F19501DA2418253300A39C60 /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				F19501DB2418253300A39C60 /* SRWebSocket.m */,
+				F19501DC2418253300A39C60 /* LICENSE */,
+				F19501DD2418253300A39C60 /* SRWebSocket.h */,
+			);
+			path = SocketRocket;
+			sourceTree = "<group>";
+		};
+		F195021A24182BEA00A39C60 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F195021B24182BEA00A39C60 /* String+Extension.swift */,
+				F195021C24182BEA00A39C60 /* OSLog+Extension.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F19501A0241795F700A39C60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501B7241795F700A39C60 /* WebRTCDemoSignalling.h in Headers */,
+				F19501EE2418253300A39C60 /* ARDSettingsModel.h in Headers */,
+				F19501F52418253400A39C60 /* ARDAppClient.h in Headers */,
+				F19501F72418253400A39C60 /* ARDExternalSampleCapturer.h in Headers */,
+				F19502062418253400A39C60 /* ARDAppClient+Internal.h in Headers */,
+				F19502002418253400A39C60 /* ARDJoinResponse+Internal.h in Headers */,
+				F19502032418253400A39C60 /* ARDTURNClient+Internal.h in Headers */,
+				F1950217241828A800A39C60 /* ARDMessageResponse+Internal.h in Headers */,
+				F19501F92418253400A39C60 /* ARDSettingsModel+Private.h in Headers */,
+				F195020A2418253400A39C60 /* RTCIceServer+JSON.h in Headers */,
+				F1950218241828A800A39C60 /* ARDRoomServerClient.h in Headers */,
+				F19501F82418253400A39C60 /* RTCIceCandidate+JSON.h in Headers */,
+				F1950219241828A800A39C60 /* ARDSignalingChannel.h in Headers */,
+				F19502052418253400A39C60 /* ARDSignalingMessage.h in Headers */,
+				F19501FB2418253400A39C60 /* ARDUtilities.h in Headers */,
+				F1950215241828A800A39C60 /* ARDMessageResponse.h in Headers */,
+				F19501F12418253300A39C60 /* RTCSessionDescription+JSON.h in Headers */,
+				F19501F02418253300A39C60 /* ARDTURNClient.h in Headers */,
+				F19501FE2418253400A39C60 /* SRWebSocket.h in Headers */,
+				F19501F32418253400A39C60 /* ARDSettingsStore.h in Headers */,
+				F19501EF2418253300A39C60 /* ARDWebSocketChannel.h in Headers */,
+				F19501ED2418253300A39C60 /* ARDJoinResponse.h in Headers */,
+				F195020D2418253400A39C60 /* ARDAppEngineClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F19501672417949000A39C60 /* WebRTCDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F19501872417949200A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemo" */;
+			buildPhases = (
+				81CC8D2D04E53E1227FE34C1 /* [CP] Check Pods Manifest.lock */,
+				F19501642417949000A39C60 /* Sources */,
+				F19501652417949000A39C60 /* Frameworks */,
+				F19501662417949000A39C60 /* Resources */,
+				F195019F2417952600A39C60 /* Embed App Extensions */,
+				F19501BF241795F700A39C60 /* Embed Frameworks */,
+				4489DC5C32EEA2B0C2E881F3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F195019A2417952600A39C60 /* PBXTargetDependency */,
+				F19501B9241795F700A39C60 /* PBXTargetDependency */,
+			);
+			name = WebRTCDemo;
+			productName = WebRTCDemo;
+			productReference = F19501682417949000A39C60 /* WebRTCDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F195017D2417949200A39C60 /* WebRTCDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F195018A2417949200A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoTests" */;
+			buildPhases = (
+				F195017A2417949200A39C60 /* Sources */,
+				F195017B2417949200A39C60 /* Frameworks */,
+				F195017C2417949200A39C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F19501802417949200A39C60 /* PBXTargetDependency */,
+			);
+			name = WebRTCDemoTests;
+			productName = WebRTCDemoTests;
+			productReference = F195017E2417949200A39C60 /* WebRTCDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F19501902417952600A39C60 /* WebRTCDemoBroadcast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F195019C2417952600A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoBroadcast" */;
+			buildPhases = (
+				2F2DA16C214FAA42524DCF9D /* [CP] Check Pods Manifest.lock */,
+				F195018D2417952600A39C60 /* Sources */,
+				F195018E2417952600A39C60 /* Frameworks */,
+				F195018F2417952600A39C60 /* Resources */,
+				F19501C72417960D00A39C60 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F19501C62417960D00A39C60 /* PBXTargetDependency */,
+			);
+			name = WebRTCDemoBroadcast;
+			productName = WebRTCDemoBroadcast;
+			productReference = F19501912417952600A39C60 /* WebRTCDemoBroadcast.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F19501A4241795F700A39C60 /* WebRTCDemoSignalling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F19501BC241795F700A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoSignalling" */;
+			buildPhases = (
+				6FC5B281A6AA9CBEEF762ADA /* [CP] Check Pods Manifest.lock */,
+				F19501A0241795F700A39C60 /* Headers */,
+				F19501A1241795F700A39C60 /* Sources */,
+				F19501A2241795F700A39C60 /* Frameworks */,
+				F19501A3241795F700A39C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WebRTCDemoSignalling;
+			productName = WebRTCDemoSignalling;
+			productReference = F19501A5241795F700A39C60 /* WebRTCDemoSignalling.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F19501AC241795F700A39C60 /* WebRTCDemoSignallingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F19501C0241795F700A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoSignallingTests" */;
+			buildPhases = (
+				F19501A9241795F700A39C60 /* Sources */,
+				F19501AA241795F700A39C60 /* Frameworks */,
+				F19501AB241795F700A39C60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F19501B0241795F700A39C60 /* PBXTargetDependency */,
+				F19501B2241795F700A39C60 /* PBXTargetDependency */,
+			);
+			name = WebRTCDemoSignallingTests;
+			productName = WebRTCDemoSignallingTests;
+			productReference = F19501AD241795F700A39C60 /* WebRTCDemoSignallingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F19501602417949000A39C60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = demo;
+				TargetAttributes = {
+					F19501672417949000A39C60 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F195017D2417949200A39C60 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F19501672417949000A39C60;
+					};
+					F19501902417952600A39C60 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F19501A4241795F700A39C60 = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					F19501AC241795F700A39C60 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F19501672417949000A39C60;
+					};
+				};
+			};
+			buildConfigurationList = F19501632417949000A39C60 /* Build configuration list for PBXProject "WebRTCDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F195015F2417949000A39C60;
+			productRefGroup = F19501692417949000A39C60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F19501672417949000A39C60 /* WebRTCDemo */,
+				F195017D2417949200A39C60 /* WebRTCDemoTests */,
+				F19501902417952600A39C60 /* WebRTCDemoBroadcast */,
+				F19501A4241795F700A39C60 /* WebRTCDemoSignalling */,
+				F19501AC241795F700A39C60 /* WebRTCDemoSignallingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F19501662417949000A39C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501782417949200A39C60 /* LaunchScreen.storyboard in Resources */,
+				F19501752417949200A39C60 /* Preview Assets.xcassets in Resources */,
+				F19501722417949200A39C60 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F195017C2417949200A39C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F195018F2417952600A39C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501A3241795F700A39C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501FD2418253400A39C60 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501AB241795F700A39C60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F2DA16C214FAA42524DCF9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebRTCDemoBroadcast-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4489DC5C32EEA2B0C2E881F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebRTCDemo/Pods-WebRTCDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WebRTCDemo/Pods-WebRTCDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WebRTCDemo/Pods-WebRTCDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FC5B281A6AA9CBEEF762ADA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebRTCDemoSignalling-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81CC8D2D04E53E1227FE34C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WebRTCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F19501642417949000A39C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F195021D24182BEA00A39C60 /* String+Extension.swift in Sources */,
+				F195016C2417949000A39C60 /* AppDelegate.swift in Sources */,
+				F195016E2417949000A39C60 /* SceneDelegate.swift in Sources */,
+				F19501702417949000A39C60 /* ContentView.swift in Sources */,
+				F195022624182E7A00A39C60 /* WebRTCDemoModelView.swift in Sources */,
+				F195021F24182BEA00A39C60 /* OSLog+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F195017A2417949200A39C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501832417949200A39C60 /* WebRTCDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F195018D2417952600A39C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F195022224182C2600A39C60 /* OSLog+Extension.swift in Sources */,
+				F195022124182C2200A39C60 /* String+Extension.swift in Sources */,
+				F195020F2418264000A39C60 /* WebRTCDemoBroadcastSampleHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501A1241795F700A39C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F195020C2418253400A39C60 /* ARDSettingsStore.m in Sources */,
+				F19501FA2418253400A39C60 /* ARDUtilities.m in Sources */,
+				F19502072418253400A39C60 /* RTCSessionDescription+JSON.m in Sources */,
+				F19501F42418253400A39C60 /* ARDAppEngineClient.m in Sources */,
+				F1950216241828A800A39C60 /* ARDMessageResponse.m in Sources */,
+				F19502042418253400A39C60 /* ARDSettingsModel.m in Sources */,
+				F195020B2418253400A39C60 /* ARDAppClient.m in Sources */,
+				F19501FC2418253400A39C60 /* SRWebSocket.m in Sources */,
+				F19502082418253400A39C60 /* RTCIceCandidate+JSON.m in Sources */,
+				F19501F62418253400A39C60 /* RTCIceServer+JSON.m in Sources */,
+				F19501FF2418253400A39C60 /* ARDJoinResponse.m in Sources */,
+				F19502092418253400A39C60 /* ARDExternalSampleCapturer.m in Sources */,
+				F19502012418253400A39C60 /* ARDTURNClient.m in Sources */,
+				F19501F22418253400A39C60 /* ARDSignalingMessage.m in Sources */,
+				F19502022418253400A39C60 /* ARDWebSocketChannel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F19501A9241795F700A39C60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F19501B5241795F700A39C60 /* WebRTCDemoSignallingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F19501802417949200A39C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F19501672417949000A39C60 /* WebRTCDemo */;
+			targetProxy = F195017F2417949200A39C60 /* PBXContainerItemProxy */;
+		};
+		F195019A2417952600A39C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F19501902417952600A39C60 /* WebRTCDemoBroadcast */;
+			targetProxy = F19501992417952600A39C60 /* PBXContainerItemProxy */;
+		};
+		F19501B0241795F700A39C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F19501A4241795F700A39C60 /* WebRTCDemoSignalling */;
+			targetProxy = F19501AF241795F700A39C60 /* PBXContainerItemProxy */;
+		};
+		F19501B2241795F700A39C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F19501672417949000A39C60 /* WebRTCDemo */;
+			targetProxy = F19501B1241795F700A39C60 /* PBXContainerItemProxy */;
+		};
+		F19501B9241795F700A39C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F19501A4241795F700A39C60 /* WebRTCDemoSignalling */;
+			targetProxy = F19501B8241795F700A39C60 /* PBXContainerItemProxy */;
+		};
+		F19501C62417960D00A39C60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F19501A4241795F700A39C60 /* WebRTCDemoSignalling */;
+			targetProxy = F19501C52417960D00A39C60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F19501762417949200A39C60 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F19501772417949200A39C60 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F19501852417949200A39C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F19501862417949200A39C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F19501882417949200A39C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9FF5ECCFD792E0E58A6258 /* Pods-WebRTCDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WebRTCDemo/WebRTCDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WebRTCDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = E4D27PWXQL;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WebRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F19501892417949200A39C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7674CFE299F6D3AAEDB6AF49 /* Pods-WebRTCDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WebRTCDemo/WebRTCDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WebRTCDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = E4D27PWXQL;
+				ENABLE_BITCODE = NO;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WebRTCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F195018B2417949200A39C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WebRTCDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCDemo.app/WebRTCDemo";
+			};
+			name = Debug;
+		};
+		F195018C2417949200A39C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WebRTCDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCDemo.app/WebRTCDemo";
+			};
+			name = Release;
+		};
+		F195019D2417952600A39C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D2CDE381884B12D931BD30 /* Pods-WebRTCDemoBroadcast.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebRTCDemoBroadcast/WebRTCDemoBroadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4D27PWXQL;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"BRODCAST_EXTENSION=1",
+				);
+				INFOPLIST_FILE = WebRTCDemoBroadcast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemo.WebRTCDemoBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F195019E2417952600A39C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D3304D04476E5EEDD6913D /* Pods-WebRTCDemoBroadcast.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = WebRTCDemoBroadcast/WebRTCDemoBroadcast.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = E4D27PWXQL;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"BRODCAST_EXTENSION=1",
+				);
+				INFOPLIST_FILE = WebRTCDemoBroadcast/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemo.WebRTCDemoBroadcast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F19501BD241795F700A39C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CBE9E510FCF7D4CED6CFDAD /* Pods-WebRTCDemoSignalling.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WebRTCDemoSignalling/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemoSignalling;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F19501BE241795F700A39C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBE24F9A4A3F9B1BCC2B9365 /* Pods-WebRTCDemoSignalling.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = E4D27PWXQL;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WebRTCDemoSignalling/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemoSignalling;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F19501C1241795F700A39C60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WebRTCDemoSignallingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemoSignallingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCDemo.app/WebRTCDemo";
+			};
+			name = Debug;
+		};
+		F19501C2241795F700A39C60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WebRTCDemoSignallingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.webrtc.demo.WebRTCDemoSignallingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebRTCDemo.app/WebRTCDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F19501632417949000A39C60 /* Build configuration list for PBXProject "WebRTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19501852417949200A39C60 /* Debug */,
+				F19501862417949200A39C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F19501872417949200A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19501882417949200A39C60 /* Debug */,
+				F19501892417949200A39C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F195018A2417949200A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F195018B2417949200A39C60 /* Debug */,
+				F195018C2417949200A39C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F195019C2417952600A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoBroadcast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F195019D2417952600A39C60 /* Debug */,
+				F195019E2417952600A39C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F19501BC241795F700A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoSignalling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19501BD241795F700A39C60 /* Debug */,
+				F19501BE241795F700A39C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F19501C0241795F700A39C60 /* Build configuration list for PBXNativeTarget "WebRTCDemoSignallingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F19501C1241795F700A39C60 /* Debug */,
+				F19501C2241795F700A39C60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F19501602417949000A39C60 /* Project object */;
+}

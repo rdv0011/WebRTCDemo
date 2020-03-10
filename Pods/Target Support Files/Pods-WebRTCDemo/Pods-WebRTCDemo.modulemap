@@ -1,0 +1,6 @@
+framework module Pods_WebRTCDemo {
+  umbrella header "Pods-WebRTCDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
