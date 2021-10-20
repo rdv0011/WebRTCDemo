@@ -83,14 +83,23 @@ NS_ASSUME_NONNULL_BEGIN
 - (RTCVideoCodecInfo *)currentVideoCodecSettingFromStore {
   [self registerStoreDefaults];
   NSData *codecData = [[self settingsStore] videoCodec];
-  return [NSKeyedUnarchiver unarchiveObjectWithData:codecData];
+  NSError *error = nil;
+  id object = [NSKeyedUnarchiver unarchivedObjectOfClass:[ARDSettingsStore class] fromData:codecData error:&error];
+  if (error) {
+    NSLog(@"%@", error);
+  }
+  return object;
 }
 
 - (BOOL)storeVideoCodecSetting:(RTCVideoCodecInfo *)videoCodec {
   if (![[self availableVideoCodecs] containsObject:videoCodec]) {
     return NO;
   }
-  NSData *codecData = [NSKeyedArchiver archivedDataWithRootObject:videoCodec];
+  NSError *error = nil;
+  NSData *codecData = [NSKeyedArchiver archivedDataWithRootObject:videoCodec requiringSecureCoding:YES error:&error];
+  if (error) {
+    NSLog(@"%@", error);
+  }
   [[self settingsStore] setVideoCodec:codecData];
   return YES;
 }
@@ -179,7 +188,11 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void)registerStoreDefaults {
-  NSData *codecData = [NSKeyedArchiver archivedDataWithRootObject:[self defaultVideoCodecSetting]];
+  NSError *error = nil;
+  NSData *codecData = [NSKeyedArchiver archivedDataWithRootObject:[self defaultVideoCodecSetting] requiringSecureCoding:YES error:&error];
+  if (error) {
+    NSLog(@"%@", error);
+  }
   [ARDSettingsStore setDefaultsForVideoResolution:[self defaultVideoResolutionSetting]
                                        videoCodec:codecData
                                           bitrate:nil
