@@ -9,7 +9,7 @@ import ReplayKit
 import os.log
 
 class WebRTCBroadcastModelView: NSObject, ObservableObject {
-    let client: ARDAppClient = ARDAppClient()
+    let client = ARDAppClient()
     let logging = RTCCallbackLogger()
     var capturer: ARDExternalSampleCapturer?
     @Published var broadcastRoomID: String = ""
