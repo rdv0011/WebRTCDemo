@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  * If the provided video codec is not part of the available video codecs
  * the store operation will not be executed and NO will be returned.
- * @param video codec settings the string to be stored.
+ * @param videoCodec codec settings the string to be stored.
  * @return YES/NO depending on success.
  */
 - (BOOL)storeVideoCodecSetting:(RTCVideoCodecInfo *)videoCodec;
@@ -90,7 +90,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Stores the provided audio only setting into the store.
  *
- * @param setting the boolean value to be stored.
+ * @param audioOnly the boolean value to be stored.
  */
 - (void)storeAudioOnlySetting:(BOOL)audioOnly;
 
@@ -102,7 +102,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Stores the provided create AecDump setting into the store.
  *
- * @param setting the boolean value to be stored.
+ * @param createAecDump the boolean value to be stored.
  */
 - (void)storeCreateAecDumpSetting:(BOOL)createAecDump;
 
@@ -115,7 +115,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Stores the provided use manual audio config setting into the store.
  *
- * @param setting the boolean value to be stored.
+ * @param useManualAudioConfig the boolean value to be stored.
  */
 - (void)storeUseManualAudioConfigSetting:(BOOL)useManualAudioConfig;
 

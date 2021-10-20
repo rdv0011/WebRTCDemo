@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * Set fallback values in case the setting has not been written by the user.
- * @param dictionary of values to store
  */
 + (void)setDefaultsForVideoResolution:(NSString *)videoResolution
                            videoCodec:(NSData *)videoCodec
