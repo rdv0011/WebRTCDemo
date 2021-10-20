@@ -616,7 +616,11 @@ static int const kKbpsMultiplier = 1000;
     case kARDSignalingMessageTypeCandidate: {
       ARDICECandidateMessage *candidateMessage =
           (ARDICECandidateMessage *)message;
-      [_peerConnection addIceCandidate:candidateMessage.candidate];
+      [_peerConnection addIceCandidate:candidateMessage.candidate completionHandler:^(NSError * _Nullable error) {
+        if (error) {
+          NSLog(@"%@", error);
+        }
+      }];
       break;
     }
     case kARDSignalingMessageTypeCandidateRemoval: {
