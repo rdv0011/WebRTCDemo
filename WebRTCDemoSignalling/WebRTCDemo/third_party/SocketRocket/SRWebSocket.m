@@ -117,7 +117,7 @@ static NSString *newSHA1String(const char *bytes, size_t length) {
         return [data base64EncodedStringWithOptions:0];
     }
     
-    return [data base64Encoding];
+    return [data base64EncodedStringWithOptions:0];
 }
 
 @implementation NSData (SRWebSocket)
@@ -510,7 +510,7 @@ static __strong NSData *CRLFCRLF;
     if ([keyBytes respondsToSelector:@selector(base64EncodedStringWithOptions:)]) {
         _secKey = [keyBytes base64EncodedStringWithOptions:0];
     } else {
-        _secKey = [keyBytes base64Encoding];
+        _secKey = [keyBytes base64EncodedStringWithOptions:0];
     }
     
     assert([_secKey length] == 24);
