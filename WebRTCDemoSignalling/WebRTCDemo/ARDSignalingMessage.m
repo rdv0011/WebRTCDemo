@@ -126,10 +126,9 @@ static NSString * const kARDTypeValueRemoveCandidates = @"remove-candidates";
     case RTCSdpTypeAnswer:
       messageType = kARDSignalingMessageTypeAnswer;
       break;
-    case RTCSdpTypePrAnswer:
+    default:
       NSAssert(NO, @"Unexpected type: %@",
           [RTCSessionDescription stringForType:sdpType]);
-      break;
   }
   if (self = [super initWithType:messageType]) {
     _sessionDescription = description;
