@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack {
             Spacer()
             TextField("Broadcast Room ID:", text: self.$modelView.broadcastRoomID)
+                .keyboardType(.decimalPad)
             Spacer()
             Button(action: {
                 self.modelView.saveRoomIDForAppExtension(roomID: self.modelView.broadcastRoomID)
@@ -26,6 +27,8 @@ struct ContentView: View {
             }
             Spacer()
         }
+        .font(.largeTitle)
+        .padding()
     }
 }
 

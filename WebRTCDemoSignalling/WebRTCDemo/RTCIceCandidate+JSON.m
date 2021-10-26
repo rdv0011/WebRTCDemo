@@ -28,7 +28,7 @@ static NSString const *kRTCICECandidatesTypeKey = @"candidates";
   NSNumber *num = dictionary[kRTCICECandidateMLineIndexKey];
   NSInteger mLineIndex = [num integerValue];
   return [[RTCIceCandidate alloc] initWithSdp:sdp
-                                sdpMLineIndex:mLineIndex
+                                sdpMLineIndex:(int)mLineIndex
                                        sdpMid:mid];
 }
 

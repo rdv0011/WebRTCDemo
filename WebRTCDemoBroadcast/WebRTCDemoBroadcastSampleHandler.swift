@@ -8,12 +8,12 @@ import WebRTCDemoSignalling
 import os.log
 
 class WebRTCDemoBroadcastSampleHandler: RPBroadcastSampleHandler {
-    let client: ARDAppClient = ARDAppClient()
+    let client = ARDAppClient()
     let logging = RTCCallbackLogger()
     let sharedSettings = UserDefaults(suiteName: .sharedGroupName)
     var capturer: ARDExternalSampleDelegate?
 
-    override func broadcastStarted(withSetupInfo setupInfo: [String : NSObject]?) {
+    override func broadcastStarted(withSetupInfo setupInfo: [String: NSObject]?) {
         // User has requested to start the broadcast. Setup info from the UI extension can be supplied but optional.
         self.logging.start { (logMessage: String, _) in
             OSLog.info(logMessage: logMessage, log: OSLog.webRTC)
@@ -47,7 +47,6 @@ class WebRTCDemoBroadcastSampleHandler: RPBroadcastSampleHandler {
         case RPSampleBufferType.video:
             // Handle video sample buffer
             capturer?.didCapture(sampleBuffer)
-            break
         case RPSampleBufferType.audioApp:
             // Handle audio sample buffer for app audio
             break

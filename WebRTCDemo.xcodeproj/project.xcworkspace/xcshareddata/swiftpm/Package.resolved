@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "WebRTC",
+        "repositoryURL": "https://github.com/alexpiezo/WebRTC.git",
+        "state": {
+          "branch": null,
+          "revision": "4a48da11f220f464d1d220504564495c4cbd4bb9",
+          "version": "94.4606.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
